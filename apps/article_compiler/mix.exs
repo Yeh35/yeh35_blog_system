@@ -1,9 +1,9 @@
-defmodule PhxBlog.MixProject do
+defmodule ArticleCompiler.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :phx_blog,
+      app: :article_compiler,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
@@ -25,6 +25,9 @@ defmodule PhxBlog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:earmark, "~> 1.4"},
+      {:jason, "~> 1.4"},
+      {:uniq, "~> 0.6.1"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       # {:sibling_app_in_umbrella, in_umbrella: true}
