@@ -16,9 +16,6 @@ defmodule Yeh35Blog.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    [
-      {:jason, "~> 1.4"},
-      {:uniq, "~> 0.6.1"}
-    ]
+    []
   end
 end
