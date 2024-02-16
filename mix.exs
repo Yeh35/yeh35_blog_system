@@ -1,4 +1,4 @@
-defmodule Yeh35Blog.MixProject do
+defmodule Yeh35.MixProject do
   use Mix.Project
 
   def project do
