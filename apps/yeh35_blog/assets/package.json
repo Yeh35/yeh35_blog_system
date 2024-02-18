@@ -1,0 +1,14 @@
+{
+  "name": "yeh35_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yeh35",
+  "license": "ISC",
+  "dependencies": {
+    "flowbite": "^2.3.0"
+  }
+}
