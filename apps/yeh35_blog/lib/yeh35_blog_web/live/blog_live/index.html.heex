@@ -17,7 +17,7 @@
           <ul class="flex flex-wrap">
             <li :for={tag <- post.tags} class="mr-3">
               <.link
-                navigate={~p"/tags/#{tag}"}
+                navigate={~p"/?tag=#{tag}"}
                 class="text-sm font-light uppercase text-black/50"
               >
                 <%= tag %>

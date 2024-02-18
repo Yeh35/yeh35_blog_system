@@ -19,9 +19,6 @@ defmodule Yeh35BlogWeb.Router do
 
     live "/", BlogLive, :index
     live "/posts/:id", BlogLive, :show
-
-    get "/blog", BlogController, :index
-    get "/blog/:id", BlogController, :show
   end
 
   # Other scopes may use custom stacks.

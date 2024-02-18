@@ -11,12 +11,12 @@ defmodule Yeh35BlogWeb.BlogLive do
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
-  # defp apply_action(socket, :index, %{"tag" => tag}) do
-  #   socket
-  #   |> assign(:page_title, tag)
-  #   |> assign(:posts, Yeh35Blog.Blog.!(tag))
-  #   |> assign(:tag, tag)
-  # end
+  defp apply_action(socket, :index, %{"tag" => tag}) do
+    socket
+    |> assign(:page_title, tag)
+    |> assign(:posts, Yeh35Blog.Blog.get_posts_by_tag!(tag))
+    |> assign(:tag, tag)
+  end
 
   defp apply_action(socket, :index, _params) do
     assign(socket, :posts, Yeh35Blog.Blog.all_posts())
