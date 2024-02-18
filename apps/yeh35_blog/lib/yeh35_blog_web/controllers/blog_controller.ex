@@ -4,7 +4,7 @@ defmodule Yeh35BlogWeb.BlogController do
   alias Yeh35Blog.Blog
 
   def index(conn, _params) do
-    render(conn, "index.html", posts: Blog.published_posts())
+    render(conn, "index.html", posts: Blog.all_posts())
   end
 
   def show(conn, %{"id" => id}) do

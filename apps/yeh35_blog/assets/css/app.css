@@ -7,6 +7,11 @@
 /* import pretendard.css */
 @import "./pretendard.css";
 
+header {
+    font-family: 'Pretendard', sans-serif;
+    font: 'Pretendard', sans-serif;
+}
+
 body {
     font-family: 'Pretendard', sans-serif;
 }
