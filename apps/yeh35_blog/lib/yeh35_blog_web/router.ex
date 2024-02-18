@@ -17,7 +17,9 @@ defmodule Yeh35BlogWeb.Router do
   scope "/", Yeh35BlogWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", BlogLive, :index
+    live "/posts/:id", BlogLive, :show
+
     get "/blog", BlogController, :index
     get "/blog/:id", BlogController, :show
   end
