@@ -10,7 +10,7 @@ module.exports = {
     "./js/**/*.js",
     "../lib/yeh35_blog_web.ex",
     "../lib/yeh35_blog_web/**/*.*ex",
-    "./node_modules/flowbite/**/*.js"
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
