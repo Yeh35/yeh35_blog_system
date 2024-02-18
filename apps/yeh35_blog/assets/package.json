@@ -9,6 +9,7 @@
   "author": "yeh35",
   "license": "ISC",
   "dependencies": {
-    "flowbite": "^2.3.0"
+    "flowbite": "^2.3.0",
+    "github-markdown-css": "^5.5.1"
   }
 }

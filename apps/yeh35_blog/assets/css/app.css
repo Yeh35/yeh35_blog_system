@@ -7,6 +7,8 @@
 /* import pretendard.css */
 @import "./pretendard.css";
 
+@import "./github-markdown-light.css";
+
 header {
     font-family: 'Pretendard', sans-serif;
     font: 'Pretendard', sans-serif;

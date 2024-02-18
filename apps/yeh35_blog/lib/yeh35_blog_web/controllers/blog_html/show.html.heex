@@ -6,7 +6,7 @@
           <%= @post.date |> Yeh35BlogWeb.Timeformat.format_date() %>
         </time>
       </dd>
-      <h1 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+      <h1 class="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
         <%= @post.title %>
       </h1>
       <div class="flex flex-wrap justify-center">
@@ -49,5 +49,5 @@
 
   <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
 
-  <%= raw(@post.body) %>
+  <div class="markdown-body"><%= raw(@post.body) %></div>
 </article>

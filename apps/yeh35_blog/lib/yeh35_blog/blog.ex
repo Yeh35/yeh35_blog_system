@@ -1,5 +1,6 @@
 defmodule Yeh35Blog.Blog do
   alias Yeh35Blog.Blog.Post
+  alias NimblePublisher.MarkdownConverter
 
   use NimblePublisher,
     build: Post,
