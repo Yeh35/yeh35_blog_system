@@ -1,1 +1,52 @@
-<h1>없어요</h1>
+<!DOCTYPE html>
+<html lang="en" class="[scrollbar-gutter:stable]">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <.live_title suffix=" · Phoenix Framework">
+      <%= assigns[:page_title] || "Yeh35Blog" %>
+    </.live_title>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
+    </script>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+      } else {
+          document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body class="bg-white border-gray-200 px-4 lg:mx-32 lg:px-6 py-2.5 dark:bg-gray-800 antialiased">
+    <div class="flex h-[calc(100vh-80px)] items-center justify-center p-5 bg-white w-full">
+      <div class="text-center">
+        <div class="inline-flex rounded-full bg-yellow-100 p-4">
+          <div class="rounded-full stroke-yellow-600 bg-yellow-200 p-4">
+            <svg
+              class="w-16 h-16"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0002 9.33337V14M14.0002 18.6667H14.0118M25.6668 14C25.6668 20.4434 20.4435 25.6667 14.0002 25.6667C7.55684 25.6667 2.3335 20.4434 2.3335 14C2.3335 7.55672 7.55684 2.33337 14.0002 2.33337C20.4435 2.33337 25.6668 7.55672 25.6668 14Z"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+              </path>
+            </svg>
+          </div>
+        </div>
+        <h1 class="mt-5 text-[36px] font-bold text-slate-800 lg:text-[50px]">
+          404 - Page not found
+        </h1>
+        <p class="text-slate-600 mt-5 lg:text-lg">
+          The page you are looking for doesn't exist or <br />has been removed.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
