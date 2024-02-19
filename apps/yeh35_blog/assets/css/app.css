@@ -4,10 +4,12 @@
 
 /* This file is for your main application CSS */
 
-/* import pretendard.css */
+
 @import "./pretendard.css";
 
 @import "./github-markdown-light.css";
+@import "./mark-up-code-style.css";
+
 
 header {
     font-family: 'Pretendard', sans-serif;

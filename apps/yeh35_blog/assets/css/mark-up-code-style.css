@@ -1,0 +1,313 @@
+.makeup .hll {
+    background-color: #222222
+}
+
+.makeup {
+    background-color: #000000
+}
+
+.makeup .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.makeup .bp {
+    color: #cd00cd;
+}
+
+/* :name_builtin_pseudo */
+.makeup .c {
+    color: #000080;
+}
+
+/* :comment */
+.makeup .c1 {
+    color: #000080;
+}
+
+/* :comment_single */
+.makeup .ch {
+    color: #000080;
+}
+
+/* :comment_hashbang */
+.makeup .cm {
+    color: #000080;
+}
+
+/* :comment_multiline */
+.makeup .cp {
+    color: #000080;
+}
+
+/* :comment_preproc */
+.makeup .cpf {
+    color: #000080;
+}
+
+/* :comment_preproc_file */
+.makeup .cs {
+    color: #cd0000;
+    font-weight: bold;
+}
+
+/* :comment_special */
+.makeup .dl {
+    color: #cd0000;
+}
+
+/* :string_delimiter */
+.makeup .err {
+    border: #FF0000;
+}
+
+/* :error */
+.makeup .gd {
+    color: #cd0000;
+}
+
+/* :generic_deleted */
+.makeup .ge {
+    font-style: italic;
+}
+
+/* :generic_emph */
+.makeup .gh {
+    color: #000080;
+    font-weight: bold;
+}
+
+/* :generic_heading */
+.makeup .gi {
+    color: #00cd00;
+}
+
+/* :generic_inserted */
+.makeup .go {
+    color: #888;
+}
+
+/* :generic_output */
+.makeup .gp {
+    color: #000080;
+    font-weight: bold;
+}
+
+/* :generic_prompt */
+.makeup .gr {
+    color: #FF0000;
+}
+
+/* :generic_error */
+.makeup .gs {
+    font-weight: bold;
+}
+
+/* :generic_strong */
+.makeup .gt {
+    color: #04D;
+}
+
+/* :generic_traceback */
+.makeup .gu {
+    color: #800080;
+    font-weight: bold;
+}
+
+/* :generic_subheading */
+.makeup .il {
+    color: #cd00cd;
+}
+
+/* :number_integer_long */
+.makeup .k {
+    color: #cdcd00;
+}
+
+/* :keyword */
+.makeup .kc {
+    color: #cdcd00;
+}
+
+/* :keyword_constant */
+.makeup .kd {
+    color: #00cd00;
+}
+
+/* :keyword_declaration */
+.makeup .kn {
+    color: #cd00cd;
+}
+
+/* :keyword_namespace */
+.makeup .kp {
+    color: #cdcd00;
+}
+
+/* :keyword_pseudo */
+.makeup .kr {
+    color: #cdcd00;
+}
+
+/* :keyword_reserved */
+.makeup .kt {
+    color: #00cd00;
+}
+
+/* :keyword_type */
+.makeup .m {
+    color: #cd00cd;
+}
+
+/* :number */
+.makeup .mb {
+    color: #cd00cd;
+}
+
+/* :number_bin */
+.makeup .mf {
+    color: #cd00cd;
+}
+
+/* :number_float */
+.makeup .mh {
+    color: #cd00cd;
+}
+
+/* :number_hex */
+.makeup .mi {
+    color: #cd00cd;
+}
+
+/* :number_integer */
+.makeup .mo {
+    color: #cd00cd;
+}
+
+/* :number_oct */
+.makeup .nb {
+    color: #cd00cd;
+}
+
+/* :name_builtin */
+.makeup .nc {
+    color: #00cdcd;
+}
+
+/* :name_class */
+.makeup .ne {
+    color: #666699;
+    font-weight: bold;
+}
+
+/* :name_exception */
+.makeup .nv {
+    color: #00cdcd;
+}
+
+/* :name_variable */
+.makeup .o {
+    color: #3399cc;
+}
+
+/* :operator */
+.makeup .ow {
+    color: #cdcd00;
+}
+
+/* :operator_word */
+.makeup .s {
+    color: #cd0000;
+}
+
+/* :string */
+.makeup .s1 {
+    color: #cd0000;
+}
+
+/* :string_single */
+.makeup .s2 {
+    color: #cd0000;
+}
+
+/* :string_double */
+.makeup .sa {
+    color: #cd0000;
+}
+
+/* :string_affix */
+.makeup .sb {
+    color: #cd0000;
+}
+
+/* :string_backtick */
+.makeup .sc {
+    color: #cd0000;
+}
+
+/* :string_char */
+.makeup .sd {
+    color: #cd0000;
+}
+
+/* :string_doc */
+.makeup .se {
+    color: #cd0000;
+}
+
+/* :string_escape */
+.makeup .sh {
+    color: #cd0000;
+}
+
+/* :string_heredoc */
+.makeup .si {
+    color: #cd0000;
+}
+
+/* :string_interpol */
+.makeup .sr {
+    color: #cd0000;
+}
+
+/* :string_regex */
+.makeup .ss {
+    color: #cd0000;
+}
+
+/* :string_symbol */
+.makeup .sx {
+    color: #cd0000;
+}
+
+/* :string_other */
+.makeup .sx {
+    color: #cd0000;
+}
+
+/* :string_sigil */
+.makeup .vc {
+    color: #00cdcd;
+}
+
+/* :name_variable_class */
+.makeup .vg {
+    color: #00cdcd;
+}
+
+/* :name_variable_global */
+.makeup .vi {
+    color: #00cdcd;
+}
+
+/* :name_variable_instance */
+.makeup .vm {
+    color: #00cdcd;
+}
+
+/* :name_variable_magic */

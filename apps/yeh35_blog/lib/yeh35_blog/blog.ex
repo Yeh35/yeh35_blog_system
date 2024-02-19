@@ -1,12 +1,11 @@
 defmodule Yeh35Blog.Blog do
   alias Yeh35Blog.Blog.Post
-  alias NimblePublisher.MarkdownConverter
 
   use NimblePublisher,
     build: Post,
     from: Application.app_dir(:yeh35_blog, "priv/posts/**/*.md"),
-    as: :posts,
-    highlighters: [:makeup_elixir, :makeup_erlang]
+    highlighters: [:makeup_elixir, :makeup_erlang],
+    as: :posts
 
   # The @posts variable is first defined by NimblePublisher.
   # Let's further modify it by sorting all posts by descending date.
