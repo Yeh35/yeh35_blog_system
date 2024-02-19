@@ -11,6 +11,10 @@ defmodule Yeh35BlogWeb.BlogLive do
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
+  def render(assigns) do
+    apply(__MODULE__, assigns.live_action, [assigns])
+  end
+
   defp apply_action(socket, :index, %{"tag" => tag}) do
     socket
     |> assign(:page_title, tag)
@@ -30,7 +34,13 @@ defmodule Yeh35BlogWeb.BlogLive do
     |> assign(:post, post)
   end
 
-  def render(assigns) do
-    apply(__MODULE__, assigns.live_action, [assigns])
+  defp apply_action(socket, :archives, _params) do
+    post_gorup_by_year =
+      Yeh35Blog.Blog.all_posts()
+      |> Enum.group_by(& &1.date.year, & &1)
+
+    socket
+    |> assign(:post_years, Map.keys(post_gorup_by_year) |> Enum.sort(&(&1 > &2)))
+    |> assign(:post_gorup_by_year, post_gorup_by_year)
   end
 end

@@ -19,6 +19,7 @@ defmodule Yeh35BlogWeb.Router do
 
     live "/", BlogLive, :index
     live "/posts/:id", BlogLive, :show
+    live "/archives", BlogLive, :archives
   end
 
   # Other scopes may use custom stacks.
