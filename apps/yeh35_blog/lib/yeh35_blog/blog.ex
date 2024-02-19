@@ -30,7 +30,6 @@ defmodule Yeh35Blog.Blog do
 
   def get_posts_by_tag!(tag) do
     case Enum.filter(all_posts(), &(tag in &1.tags)) do
-      # [] -> raise NotFoundError, "posts with tag=#{tag} not found"
       [] -> []
       posts -> posts
     end
