@@ -1,9 +1,3 @@
-# Yeh35Blog
+# Yeh35 Blog System
 
-- web server
-- article builder
-- article compiler
-- blug componet
-
-md -> d2 export -> files -> html
-
+domain : https://www.yeh35.com
