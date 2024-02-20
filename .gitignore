@@ -28,8 +28,11 @@ erl_crash.dump
 
 # User-specific stuff
 .idea/**/workspace.xml
-.idea/**/tasks.xml
+.idea/**/tasks.xmld
 .idea/**/usage.statistics.xml
+.idea/**/misc.xml
+.idea/**/rebar.xml
+.idea/**/vcs.xml
 .idea/**/dictionaries
 .idea/**/shelf
 
