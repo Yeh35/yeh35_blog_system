@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="ELIXIR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../_build/dev/lib/yeh35_blog/ebin" />
+    <output-test url="file://$MODULE_DIR$/../../_build/test/lib/yeh35_blog/ebin" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.elixir_ls" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/node_modules/phoenix" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/node_modules/phoenix_html" />
+      <excludeFolder url="file://$MODULE_DIR$/cover" />
+      <excludeFolder url="file://$MODULE_DIR$/deps" />
+      <excludeFolder url="file://$MODULE_DIR$/doc" />
+      <excludeFolder url="file://$MODULE_DIR$/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/priv/static/assets" />
+    </content>
+    <orderEntry type="jdk" jdkName="Elixir 1.16.1" jdkType="Elixir SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="phoenix" level="project" />
+    <orderEntry type="library" name="phoenix_html" level="project" />
+    <orderEntry type="library" name="phoenix_live_reload" level="project" />
+    <orderEntry type="library" name="phoenix_live_view" level="project" />
+    <orderEntry type="library" name="floki" level="project" />
+    <orderEntry type="library" name="phoenix_live_dashboard" level="project" />
+    <orderEntry type="library" name="esbuild" level="project" />
+    <orderEntry type="library" name="tailwind" level="project" />
+    <orderEntry type="library" name="swoosh" level="project" />
+    <orderEntry type="library" name="finch" level="project" />
+    <orderEntry type="library" name="telemetry_metrics" level="project" />
+    <orderEntry type="library" name="telemetry_poller" level="project" />
+    <orderEntry type="library" name="gettext" level="project" />
+    <orderEntry type="library" name="jason" level="project" />
+    <orderEntry type="library" name="dns_cluster" level="project" />
+    <orderEntry type="library" name="plug_cowboy" level="project" />
+    <orderEntry type="library" name="nimble_publisher" level="project" />
+    <orderEntry type="library" name="makeup_elixir" level="project" />
+    <orderEntry type="library" name="makeup_erlang" level="project" />
+    <orderEntry type="library" name="plug" level="project" />
+    <orderEntry type="library" name="plug_crypto" level="project" />
+    <orderEntry type="library" name="telemetry" level="project" />
+    <orderEntry type="library" name="phoenix_pubsub" level="project" />
+    <orderEntry type="library" name="phoenix_template" level="project" />
+    <orderEntry type="library" name="websock_adapter" level="project" />
+    <orderEntry type="library" name="phoenix_view" level="project" />
+    <orderEntry type="library" name="castore" level="project" />
+    <orderEntry type="library" name="ex_doc" level="project" />
+    <orderEntry type="library" name="ecto" level="project" />
+    <orderEntry type="library" name="ecto_sql" level="project" />
+    <orderEntry type="library" name="makeup_eex" level="project" />
+    <orderEntry type="library" name="makeup_diff" level="project" />
+    <orderEntry type="library" name="phx_new" level="project" />
+    <orderEntry type="library" name="mint" level="project" />
+    <orderEntry type="library" name="mint_web_socket" level="project" />
+    <orderEntry type="library" name="file_system" level="project" />
+    <orderEntry type="library" name="html_entities" level="project" />
+    <orderEntry type="library" name="earmark" level="project" />
+    <orderEntry type="library" name="benchee" level="project" />
+    <orderEntry type="library" name="benchee_html" level="project" />
+    <orderEntry type="library" name="credo" level="project" />
+    <orderEntry type="library" name="dialyxir" level="project" />
+    <orderEntry type="library" name="html5ever" level="project" />
+    <orderEntry type="library" name="fast_html" level="project" />
+    <orderEntry type="library" name="mime" level="project" />
+    <orderEntry type="library" name="ecto_psql_extras" level="project" />
+    <orderEntry type="library" name="ecto_mysql_extras" level="project" />
+    <orderEntry type="library" name="ecto_sqlite3_extras" level="project" />
+    <orderEntry type="library" name="circular_buffer" level="project" />
+    <orderEntry type="library" name="stream_data" level="project" />
+    <orderEntry type="library" name="ecto_sqlite3" level="project" />
+    <orderEntry type="library" name="dart_sass" level="project" />
+    <orderEntry type="library" name="hackney" level="project" />
+    <orderEntry type="library" name="req" level="project" />
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="library" name="gen_smtp" level="project" />
+    <orderEntry type="library" name="cowboy" level="project" />
+    <orderEntry type="library" name="bandit" level="project" />
+    <orderEntry type="library" name="ex_aws" level="project" />
+    <orderEntry type="library" name="bypass" level="project" />
+    <orderEntry type="library" name="nimble_pool" level="project" />
+    <orderEntry type="library" name="nimble_options" level="project" />
+    <orderEntry type="library" name="x509" level="project" />
+    <orderEntry type="library" name="excoveralls" level="project" />
+    <orderEntry type="library" name="expo" level="project" />
+    <orderEntry type="library" name="cowboy_telemetry" level="project" />
+    <orderEntry type="library" name="kadabra" level="project" />
+    <orderEntry type="library" name="makeup" level="project" />
+    <orderEntry type="library" name="nimble_parsec" level="project" />
+    <orderEntry type="library" name="unicode_set" level="project" />
+    <orderEntry type="library" name="benchee_markdown" level="project" />
+    <orderEntry type="library" name="websock" level="project" />
+    <orderEntry type="library" name="decimal" level="project" />
+    <orderEntry type="library" name="hpax" level="project" />
+    <orderEntry type="library" name="mox" level="project" />
+    <orderEntry type="library" name="hpack" level="project" />
+  </component>
+</module>

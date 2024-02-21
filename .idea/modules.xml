@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apps/article_compiler/article_compiler.iml" filepath="$PROJECT_DIR$/apps/article_compiler/article_compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/yeh35_blog/yeh35_blog.iml" filepath="$PROJECT_DIR$/apps/yeh35_blog/yeh35_blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yeh35_blog_system.iml" filepath="$PROJECT_DIR$/yeh35_blog_system.iml" />
+    </modules>
+  </component>
+</project>
