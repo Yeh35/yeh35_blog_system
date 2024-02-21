@@ -4,7 +4,7 @@ domain : https://www.yeh35.com
 
 
 ## Docker Build
-
+- 참고 : https://medium.com/@alistairisrael/containerizing-a-phoenix-1-6-umbrella-project-8ec03651a59c
 ```bash
 docker build --platform linux/amd64 -t yeh35_blog .
 
