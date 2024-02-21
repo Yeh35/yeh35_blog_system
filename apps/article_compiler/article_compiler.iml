@@ -26,5 +26,7 @@
     <orderEntry type="library" name="stream_data" level="project" />
     <orderEntry type="library" name="telemetry" level="project" />
     <orderEntry type="library" name="decimal" level="project" />
+    <orderEntry type="library" name="uniq" level="project" />
+    <orderEntry type="library" name="elixir_uuid" level="project" />
   </component>
 </module>

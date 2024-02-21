@@ -6,7 +6,8 @@ defmodule Yeh35.MixProject do
       apps_path: "apps",
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      releases: releases()
     ]
   end
 
@@ -17,5 +18,15 @@ defmodule Yeh35.MixProject do
   # Run "mix help deps" for examples and options.
   defp deps do
     []
+  end
+
+  def releases do
+    [
+      yeh35: [
+        applications: [
+          yeh35_blog: :permanent
+        ]
+      ]
+    ]
   end
 end
