@@ -71,7 +71,7 @@ RUN mix compile
 # Changes to config/runtime.exs don't require recompiling the code
 COPY apps/yeh35_blog/config/runtime.exs config/
 
-COPY rel rel
+#COPY rel rel
 RUN mix release
 
 # start a new build stage so that the final image will only contain
@@ -105,4 +105,4 @@ USER nobody
 # above and adding an entrypoint. See https://github.com/krallin/tini for details
 # ENTRYPOINT ["/tini", "--"]
 
-ENTRYPOINT ["/app/bin/yeh35"]
+ENTRYPOINT ["/app/bin/yeh35", "start"]
