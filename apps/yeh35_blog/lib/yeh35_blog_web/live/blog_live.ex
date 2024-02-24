@@ -1,5 +1,6 @@
 defmodule Yeh35BlogWeb.BlogLive do
-  use Yeh35BlogWeb, :live_view
+  use Yeh35BlogWeb.Live
+  # use Yeh35BlogWeb, :live_view
 
   embed_templates "blog_live/*"
 

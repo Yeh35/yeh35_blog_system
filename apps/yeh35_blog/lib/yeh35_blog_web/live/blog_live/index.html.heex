@@ -3,14 +3,14 @@
     <article class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
       <dl>
         <dt class="sr-only">Published on</dt>
-        <dd class="text-base font-medium leading-6 text-gray-500">
+        <dd class="text-base font-medium leading-6">
           <time datetime={post.date}><%= post.date %></time>
         </dd>
       </dl>
       <div class="space-y-3 xl:col-span-3">
         <div>
           <h3 class="text-2xl font-bold leading-8 tracking-tight">
-            <.link navigate={~p"/posts/#{post.id}"} class="text-gray-900">
+            <.link navigate={~p"/posts/#{post.id}"}>
               <%= post.title %>
             </.link>
           </h3>
@@ -18,14 +18,14 @@
             <li :for={tag <- post.tags} class="mr-3">
               <.link
                 navigate={~p"/?tag=#{tag}"}
-                class="text-sm font-light uppercase text-black/50"
+                class="text-sm font-light uppercase"
               >
                 <%= tag %>
               </.link>
             </li>
           </ul>
         </div>
-        <div class="prose max-w-none text-black/50">
+        <div class="prose max-w-none">
           <%= post.description %>
         </div>
       </div>
