@@ -1,3 +1,21 @@
+<%!-- <ul class="flex flex-wrap gap-2">
+  <li>
+    <.link class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+      Technology
+    </.link>
+  </li>
+  <li>
+    <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">
+      Environment
+    </span>
+  </li>
+  <li>
+    <span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">
+      Innovation
+    </span>
+  </li>
+</ul> --%>
+
 <ul>
   <li :for={post <- @posts} class="py-4">
     <article class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -14,16 +32,11 @@
               <%= post.title %>
             </.link>
           </h3>
-          <ul class="flex flex-wrap">
-            <li :for={tag <- post.tags} class="mr-3">
-              <.link
-                navigate={~p"/?tag=#{tag}"}
-                class="text-sm font-light uppercase"
-              >
-                <%= tag %>
-              </.link>
+          <.tag_bar>
+            <li :for={tag <- post.tags}>
+              <.tag tag={tag} navigate={~p"/?tag=#{tag}"} />
             </li>
-          </ul>
+          </.tag_bar>
         </div>
         <div class="prose max-w-none">
           <%= post.description %>

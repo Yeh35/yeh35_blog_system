@@ -10,14 +10,11 @@
         <%= @post.title %>
       </h1>
       <div class="flex flex-wrap justify-center">
-        <%= for tag <- @post.tags do %>
-          <a
-            class="mr-3 text-xs font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            href={"/?tag=" <> tag}
-          >
-            <%= tag %>
-          </a>
-        <% end %>
+        <.tag_bar>
+          <li :for={tag <- @post.tags}>
+            <.tag tag={tag} navigate={~p"/?tag=#{tag}"} />
+          </li>
+        </.tag_bar>
       </div>
     </div>
 

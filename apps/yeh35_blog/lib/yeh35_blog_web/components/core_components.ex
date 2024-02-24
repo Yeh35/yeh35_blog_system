@@ -671,4 +671,28 @@ defmodule Yeh35BlogWeb.CoreComponents do
   def translate_errors(errors, field) when is_list(errors) do
     for {^field, {msg, opts}} <- errors, do: translate_error({msg, opts})
   end
+
+  slot :inner_block, required: true
+
+  def tag_bar(assigns) do
+    ~H"""
+    <ul class="flex flex-wrap gap-1">
+      <%= render_slot(@inner_block) %>
+    </ul>
+    """
+  end
+
+  attr :tag, :string, required: true
+  attr :navigate, :any, required: true
+
+  def tag(assigns) do
+    ~H"""
+    <.link
+      navigate={@navigate}
+      class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900"
+    >
+      <%= @tag %>
+    </.link>
+    """
+  end
 end
