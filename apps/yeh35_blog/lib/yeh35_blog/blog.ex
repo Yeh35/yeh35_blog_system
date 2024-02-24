@@ -4,7 +4,7 @@ defmodule Yeh35Blog.Blog do
   use NimblePublisher,
     build: Post,
     from: Application.app_dir(:yeh35_blog, "priv/posts/**/*.md"),
-    highlighters: [:makeup_elixir, :makeup_erlang],
+    highlighters: [:makeup_elixir, :makeup_erlang, :makeup_html, :makeup_js],
     as: :posts
 
   # The @posts variable is first defined by NimblePublisher.

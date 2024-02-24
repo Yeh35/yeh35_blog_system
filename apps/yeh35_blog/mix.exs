@@ -55,7 +55,9 @@ defmodule Yeh35Blog.MixProject do
       # nimble
       {:nimble_publisher, "~> 1.1"},
       {:makeup_elixir, ">= 0.0.0"},
-      {:makeup_erlang, ">= 0.0.0"}
+      {:makeup_erlang, ">= 0.0.0"},
+      {:makeup_html, ">= 0.0.0"},
+      {:makeup_js, ">= 0.0.0"}
     ]
   end
 
