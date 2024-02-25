@@ -33,4 +33,8 @@ defmodule Yeh35Blog.Blog do
       posts -> posts
     end
   end
+
+  def get_post_by_random!() do
+    Enum.random(all_posts())
+  end
 end

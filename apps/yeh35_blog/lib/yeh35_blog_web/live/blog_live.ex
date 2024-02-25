@@ -16,6 +16,12 @@ defmodule Yeh35BlogWeb.BlogLive do
     apply(__MODULE__, assigns.live_action, [assigns])
   end
 
+  def handle_event("random_post", _params, socket) do
+    post = Yeh35Blog.Blog.get_post_by_random!()
+
+    {:noreply, push_patch(socket, to: ~p"/posts/#{post.id}")}
+  end
+
   defp apply_action(socket, :index, %{"tag" => tag}) do
     socket
     |> assign(:page_title, tag)
