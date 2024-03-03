@@ -1,0 +1,5 @@
+{
+    "markdown.extension.print.absoluteImgPath": true,
+    "pasteImage.defaultName": "${crypto.randomUUID()}",
+    "pasteImage.path": "${workspaceFolder}/images",
+}
