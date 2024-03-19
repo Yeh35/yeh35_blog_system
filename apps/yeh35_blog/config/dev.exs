@@ -16,7 +16,8 @@ config :yeh35_blog, Yeh35BlogWeb.Endpoint,
   secret_key_base: "ZjQEMhFdGt9ytxGgQCxlIHOyoiAQscelcpsALH3pYKxL6UI8/sSkwAgmxon4Eekd",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
+    esbuild: {Esbuild, :install_and_run, [:catalogue, ~w(--sourcemap=inline --watch)]}
   ]
 
 # ## SSL Support
@@ -44,12 +45,14 @@ config :yeh35_blog, Yeh35BlogWeb.Endpoint,
 
 # Watch static and templates for browser reloading.
 config :yeh35_blog, Yeh35BlogWeb.Endpoint,
+  reloadable_compilers: [:gettext, :elixir, :app, :surface],
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/yeh35_blog_web/(controllers|live|components)/.*(ex|heex)$",
-      ~r"posts/*/.*(md)$"
+      ~r"lib/yeh35_blog_web/(controllers|live|components)/.*(ex|heex|sface|js)$",
+      ~r"posts/*/.*(md)$",
+      ~r"priv/catalogue/.*(ex)$"
     ]
   ]
 

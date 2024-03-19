@@ -1,6 +1,8 @@
 defmodule Yeh35BlogWeb.Router do
   use Yeh35BlogWeb, :router
 
+  import Surface.Catalogue.Router
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -17,9 +19,9 @@ defmodule Yeh35BlogWeb.Router do
   scope "/", Yeh35BlogWeb do
     pipe_through :browser
 
-    live "/", BlogLive, :index
-    live "/posts/:id", BlogLive, :show
-    live "/archives", BlogLive, :archives
+    live "/", PostLive.Index
+    live "/posts/:id", PostLive.Show
+    live "/archives", PostLive.Archives
   end
 
   # Other scopes may use custom stacks.
@@ -41,6 +43,13 @@ defmodule Yeh35BlogWeb.Router do
 
       live_dashboard "/dashboard", metrics: Yeh35BlogWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
+    end
+  end
+
+  if Mix.env() == :dev do
+    scope "/" do
+      pipe_through :browser
+      surface_catalogue("/catalogue")
     end
   end
 end

@@ -36,3 +36,9 @@ yeh35_blog-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
+
+# Ignore generated js hook files for components
+assets/js/_hooks/
+
+# Ignore generated CSS file for components
+assets/css/_components.css

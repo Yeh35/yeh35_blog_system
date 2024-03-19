@@ -13,7 +13,8 @@ defmodule Yeh35Blog.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      compilers: Mix.compilers() ++ [:surface]
     ]
   end
 
@@ -28,7 +29,8 @@ defmodule Yeh35Blog.MixProject do
   end
 
   # Specifies which paths to compile per environment.
-  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(:test), do: ["lib", "test/support"] ++ catalogues()
+  defp elixirc_paths(:dev), do: ["lib"] ++ catalogues()
   defp elixirc_paths(_), do: ["lib"]
 
   # Specifies your project dependencies.
@@ -38,6 +40,7 @@ defmodule Yeh35Blog.MixProject do
     [
       {:phoenix, "~> 1.7.9"},
       {:phoenix_html, "~> 3.3"},
+      {:surface, "~> 0.11.2"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.20.1"},
       {:floki, ">= 0.30.0", only: :test},
@@ -57,7 +60,8 @@ defmodule Yeh35Blog.MixProject do
       {:makeup_elixir, ">= 0.0.0"},
       {:makeup_erlang, ">= 0.0.0"},
       {:makeup_html, ">= 0.0.0"},
-      {:makeup_js, ">= 0.0.0"}
+      {:makeup_js, ">= 0.0.0"},
+      {:surface_catalogue, "~> 0.6.0"}
     ]
   end
 
@@ -73,6 +77,12 @@ defmodule Yeh35Blog.MixProject do
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
       "assets.build": ["tailwind default", "esbuild default"],
       "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
+    ]
+  end
+
+  def catalogues do
+    [
+      "priv/catalogue"
     ]
   end
 end

@@ -76,6 +76,7 @@ defmodule Yeh35BlogWeb do
 
       # Include general helpers for rendering HTML
       unquote(html_helpers())
+      import Surface
     end
   end
 
@@ -109,5 +110,14 @@ defmodule Yeh35BlogWeb do
   """
   defmacro __using__(which) when is_atom(which) do
     apply(__MODULE__, which, [])
+  end
+
+  def surface_live_view do
+    quote do
+      use Surface.LiveView,
+        layout: {Yeh35BlogWeb.Layouts, :app}
+
+      unquote(html_helpers())
+    end
   end
 end

@@ -10,6 +10,7 @@ module.exports = {
     "./js/**/*.js",
     "../lib/yeh35_blog_web.ex",
     "../lib/yeh35_blog_web/**/*.*ex",
+    "../lib/yeh35_blog_web/**/*.*sface",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
