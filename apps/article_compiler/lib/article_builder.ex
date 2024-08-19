@@ -46,7 +46,7 @@ defmodule ArticleBuilder do
     end
   end
 
-  @spec compile_article(ArticleCompiler.t(), String.t()) :: ArticleCompiler.t()
+  @spec compile_article(%ArticleCompiler{}, String.t()) :: %ArticleCompiler{}
   defp compile_article(article, saved_file_path) do
     article
     |> ArticleCompiler.compile()

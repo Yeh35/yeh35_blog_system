@@ -41,7 +41,6 @@ defmodule ArticleCompiler.MarkdownModifier do
     iex> load_yaml_front_matter("./articles/test.md")
     [{"title", "My First Blog Post"}, {"date", "2020-01-01"}]
   """
-  @spec load_yaml_front_matter_from_file(String.t()) :: Map.t()
   def load_yaml_front_matter_from_file(file_path) do
     File.read!(file_path)
     |> load_yaml_front_matter()
@@ -50,7 +49,7 @@ defmodule ArticleCompiler.MarkdownModifier do
   @doc """
   Load the YAML front matter from a markdown and return it as a list of key-value pairs.
   """
-  @spec load_yaml_front_matter(String.t()) :: Map.t()
+  @spec load_yaml_front_matter(String.t()) :: %{}
   def load_yaml_front_matter(file_content) do
     if has_yaml_front_matter?(file_content) do
       # YAML front matter 추출
