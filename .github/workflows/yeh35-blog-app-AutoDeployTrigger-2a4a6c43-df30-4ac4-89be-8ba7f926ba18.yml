@@ -8,14 +8,17 @@ on:
       [ main ]
     paths:
     - '**'
-    - '.github/workflows/yeh35-blog-app-AutoDeployTrigger-0d515bf2-c4c3-40fe-85af-62bb98619e97.yml'
+    - '.github/workflows/yeh35-blog-app-AutoDeployTrigger-2a4a6c43-df30-4ac4-89be-8ba7f926ba18.yml'
 
   # Allow manual trigger 
-  workflow_dispatch:
-      
+  workflow_dispatch:      
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions: 
+      id-token: write #This is required for requesting the OIDC JWT Token
+      contents: read #Required when GH token is used to authenticate with private repo
 
     steps:
       - name: Checkout to the branch
@@ -24,20 +27,21 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.YEH35BLOGAPP_AZURE_CREDENTIALS }}
+          client-id: ${{ secrets.YEH35BLOGAPP_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.YEH35BLOGAPP_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.YEH35BLOGAPP_AZURE_SUBSCRIPTION_ID }}
 
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }} 
-          registryUrl: yeh35blog.azurecr.io
+          registryUrl: docker.io
           registryUsername: ${{ secrets.YEH35BLOGAPP_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.YEH35BLOGAPP_REGISTRY_PASSWORD }}
           containerAppName: yeh35-blog-app
           resourceGroup: yeh35_blog_res_group
-          imageToBuild: yeh35blog.azurecr.io/yeh35-blog-app:${{ github.sha }}
-          
-            
+          imageToBuild: yeh35/yeh35-blog-app:${{ github.sha }}
+          _buildArgumentsKey_: |
+            _buildArgumentsValues_
 
-     
 
