@@ -1,5 +1,9 @@
 {
     "markdown.extension.print.absoluteImgPath": true,
-    "pasteImage.defaultName": "${crypto.randomUUID()}",
-    "pasteImage.path": "${workspaceFolder}/images",
+    "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+    "pasteImage.path": "${projectRoot}/apps/yeh35_blog/priv/static/images/posts",
+    "pasteImage.basePath": "",
+    "pasteImage.filePathConfirmInputBoxMode": "fullPath",
+    "pasteImage.insertPattern": "${imageSyntaxPrefix}/images/posts/${imageFileName}${imageSyntaxSuffix}",
+    "pasteImage.forceUnixStyleSeparator": false,
 }
