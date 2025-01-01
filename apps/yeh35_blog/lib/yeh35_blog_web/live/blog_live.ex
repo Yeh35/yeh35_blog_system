@@ -12,6 +12,7 @@ defmodule Yeh35BlogWeb.BlogLive do
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
+  @spec render(atom() | %{:live_action => atom(), optional(any()) => any()}) :: any()
   def render(assigns) do
     apply(__MODULE__, assigns.live_action, [assigns])
   end

@@ -1,4 +1,5 @@
 defmodule Yeh35BlogWeb.Router do
+  alias Yeh35BlogWeb.DictionaryLive
   use Yeh35BlogWeb, :router
 
   pipeline :browser do
@@ -20,6 +21,7 @@ defmodule Yeh35BlogWeb.Router do
     live "/", BlogLive, :index
     live "/posts/:id", BlogLive, :show
     live "/archives", BlogLive, :archives
+    live "/dictionary", DictionaryLive, :index
   end
 
   # Other scopes may use custom stacks.
